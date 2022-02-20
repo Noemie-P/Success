@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "61a4a3fbcd0ecec9ff6a7d1f"
+  },
+  "name": "SIO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a4a401cd0ecec9ff6a7d21"
+  },
+  "name": "SISR",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61af8a4949d37924e9854392"
+  },
+  "name": "monge",
+  "__v": 0
+}]

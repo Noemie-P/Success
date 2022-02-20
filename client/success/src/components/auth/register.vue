@@ -1,0 +1,101 @@
+<template>
+  <div class="container">
+    <!--<admin-navigation/>-->
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3 col-sm-10 offset-sm-1">
+        <!--<h1>Créer un utilisateur</h1>-->
+        <form
+          class="text-center border border-primary p-5"
+          style="margin-top:70px;height:auto;padding-top:100px !important;"
+          @submit.prevent="registerUser"
+        >
+          <input
+            type="text"
+            id="user_name"
+            placeholder="user_name"
+            v-model="register.user_name"
+            required
+          />
+          <select name="type" v-model="register.type">
+            <option value="correcteur">correcteur</option>
+            <option value="collaborateur">collaborateur</option>
+          </select>
+          <!--<input
+            type="text"
+            id="text"
+            class="form-control mb-5"
+            placeholder="type"
+            v-model="register.type"
+            required
+          />-->
+          <!-- Password -->
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            v-model="register.password"
+          />
+          <p>
+            <!-- Sign in button -->
+            <center>
+              <button>
+                Sign in
+              </button>
+            </center>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+//import AdminNavigation from '../AdminNavigation.vue';
+import config from "../../../config/env"
+export default {
+  //components: { AdminNavigation },
+  data() {
+    return {
+      register: {
+        user_name: "",
+        type:"",
+        password: ""
+      }
+    }
+  },
+  props: {
+    "groupe2":String
+  },
+
+  methods: {
+    async registerUser() {
+    
+      const requestOpt = {
+            method: "POST",
+            body: JSON.stringify({"user_name":this.register.user_name, "type":this.register.type, "password": this.register.password, "groupe":this.groupe2}),
+            headers: { 'Content-type': 'application/json; charset=UTF-8' }
+        };
+        fetch(config.VUE_APP_BASE_URL + "/register", requestOpt)
+        .then((response) => response.text())
+        .then((result) => {
+          console.log(result);
+          let token = result.data.token;
+          console.log(token)
+          if (token) {
+            localStorage.setItem("jwt", token);
+            this.$router.push("/");
+            console.log("Success", "Registration Was successful", "success");
+          } else {
+            console.log("Error", "Something Went Wrong", "error");
+          }
+        }). catch ((err) =>{
+        let error = err.response;
+        if (error.status == 409) {
+          console.log("Error", error.data.message, "error");
+        } else {
+          console.log("Error", error.data.err.message, "error");
+        }
+      })
+    }
+  }
+};
+</script>

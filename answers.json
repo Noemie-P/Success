@@ -1,0 +1,182 @@
+[{
+  "_id": {
+    "$oid": "61a4e5925221257dd240e0da"
+  },
+  "id_questionnaire": {
+    "$oid": "61a4a9bfcd0ecec9ff6a7d8b"
+  },
+  "id_user": {
+    "$oid": "61a4abc7cd0ecec9ff6a7dac"
+  },
+  "answers": [
+    {
+      "answer": "2",
+      "question": "Q1",
+      "goodAnswer": "1"
+    },
+    {
+      "answer": "m",
+      "question": "Q2"
+    },
+    {
+      "answer": "7",
+      "question": "Q3",
+      "goodAnswer": "7"
+    }
+  ],
+  "note": 2,
+  "noteTotal": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a62e5661441e487ccae4bd"
+  },
+  "id_questionnaire": {
+    "$oid": "61a4a9bfcd0ecec9ff6a7d8b"
+  },
+  "id_user": {
+    "$oid": "61a4abc7cd0ecec9ff6a7dac"
+  },
+  "answers": [
+    {
+      "answer": "7",
+      "question": "Q3",
+      "goodAnswer": "7"
+    },
+    {
+      "answer": "3",
+      "question": "Q1",
+      "goodAnswer": "1"
+    },
+    {
+      "answer": "n",
+      "question": "Q2"
+    }
+  ],
+  "note": 0,
+  "noteTotal": 3,
+  "statut": "A corriger",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a79fca262b7426b2150af7"
+  },
+  "id_questionnaire": {
+    "$oid": "61a774047be00877002c5450"
+  },
+  "id_user": {
+    "$oid": "61a4abc7cd0ecec9ff6a7dac"
+  },
+  "answers": [
+    {
+      "answer": "l",
+      "question": "Q2"
+    },
+    {
+      "answer": "7",
+      "question": "Q3",
+      "goodAnswer": "7"
+    },
+    {
+      "answer": "2",
+      "question": "Q1",
+      "goodAnswer": "1"
+    }
+  ],
+  "note": 0,
+  "noteTotal": 3,
+  "statut": "A corriger",
+  "datePassage": {
+    "$date": "2021-12-01T16:16:03.456Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a7a11a262b7426b2150b41"
+  },
+  "id_questionnaire": {
+    "$oid": "61a774047be00877002c5450"
+  },
+  "id_user": {
+    "$oid": "61a4abc7cd0ecec9ff6a7dac"
+  },
+  "answers": [
+    {
+      "answer": "c",
+      "question": "Q2"
+    },
+    {
+      "answer": "7",
+      "question": "Q3",
+      "goodAnswer": "7"
+    },
+    {
+      "answer": "3",
+      "question": "Q1",
+      "goodAnswer": "1"
+    }
+  ],
+  "note": 0,
+  "noteTotal": 3,
+  "statut": "A corriger",
+  "datePassage": {
+    "$date": "2021-01-10T23:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61af864549d37924e98542f0"
+  },
+  "id_questionnaire": {
+    "$oid": "61a4a9bfcd0ecec9ff6a7d8b"
+  },
+  "id_user": {
+    "$oid": "61a4abc7cd0ecec9ff6a7dac"
+  },
+  "answers": [
+    {
+      "answer": "3",
+      "question": "Q1",
+      "goodAnswer": "1"
+    },
+    {
+      "answer": "14",
+      "question": "Q3",
+      "goodAnswer": "7"
+    },
+    {
+      "answer": "n",
+      "question": "Q2"
+    }
+  ],
+  "note": 0,
+  "noteTotal": 3,
+  "statut": "A corriger",
+  "datePassage": {
+    "$date": "2021-12-07T16:05:19.476Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61af8afe49d37924e98543c1"
+  },
+  "id_questionnaire": {
+    "$oid": "61af8abf49d37924e98543b4"
+  },
+  "id_user": {
+    "$oid": "61af8a6a49d37924e985439f"
+  },
+  "answers": [
+    {
+      "answer": "nous",
+      "question": "Qui?",
+      "goodAnswer": "nous"
+    }
+  ],
+  "note": 2,
+  "noteTotal": 2,
+  "datePassage": {
+    "$date": "2021-12-07T16:25:27.977Z"
+  },
+  "__v": 0
+}]
