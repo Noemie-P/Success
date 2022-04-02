@@ -1,0 +1,94 @@
+.header {
+    background-color: rgb(55, 7, 228) ;
+    color: white;
+    padding: 0.3%;
+}
+.header h2{
+    text-align: center;
+}
+
+h1 {
+    color: rgb(55, 7, 228);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card { 
+    border:1px solid rgb(55, 7, 228);
+    padding: 5px;
+}
+.card-title {
+    color: rgb(55, 7, 228);
+}
+
+table {
+    width:50%;
+    justify-content: center;
+    border-collapse: collapse;
+}
+.bigTable {
+    width: 90%;
+    justify-content: center;
+}
+th {
+    color:white;
+    background-color: rgba(61, 14, 233, 0.829);
+    font-weight: lighter;
+    border-radius: 5%,5%,0%,0%;
+}
+
+td {
+    border-bottom: 1px solid rgba(61, 14, 233, 0.829);
+}
+
+.flex-containers-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+    margin: 1%;
+    width: 100%;
+}
+.cards {
+    flex-direction: column;
+    margin: 2%;
+}
+.green {
+    background-color: rgb(75, 196, 75);
+    width:90%;
+    margin: 2%;
+}
+.grey {
+    background-color: rgb(167, 163, 163);
+    width:90%;
+    margin: 2%;
+}
+.red {
+    background-color: rgba(247, 40, 40, 0.884);
+    width:90%;
+    margin: 2%;
+}
+.alignCenter {
+    justify-items: center;
+}
+.nav {
+    width: 20%;
+    padding: 2%;
+    background-color: rgba(61, 14, 233, 0.829);
+    height: 100%;
+}
+
+.nav a {
+    color:white;
+}
+
+.page {
+    align-items: center;
+    width: 70%;
+    padding: 2%;
+}
